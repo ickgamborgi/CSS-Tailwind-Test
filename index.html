@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Document Title -->
+  <title>CSS Frameworks</title>
+
+  <!-- Custom CSS for Tailwind -->
+  <style>
+    .hero {
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgb(154, 64, 0), rgba(0, 0, 0, 0));
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="hidden">CSS Frameworks</h1>
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white shadow-md fixed w-full z-40">
+    <h2 class="hidden">Header</h2>
+    <div class="container mx-auto flex justify-between items-center p-4">
+    <h3 class="hidden">Logo</h3>
+      <div class="text-l font-bold flex gap-3 items-center cursor-pointer">
+        <img src="images/logo.svg" alt="Logo" class="w-8">
+        <h4 class="uppercase text-xl">O-House</h4>
+      </div>
+      <nav>
+        <h3 class="hidden">Header Navigation</h3>
+        <ul class="flex space-x-4">
+          <li><a href="#gallery" class="hover:text-blue-300"><h4>Gallery</h4></a></li>
+          <li><a href="#about" class="hover:text-blue-300"><h4>About</h4></a></li>
+          <li><a href="#contact" class="hover:text-blue-300"><h4>Contact</h4></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2 class="hidden">Main Content</h2>
+    
+    <!-- Hero Section -->
+    <section class="w-full bg-cover bg-center h-72 hero"  style="background-image: url('images/cdmx-7.jpg');">
+      <h3 class="hidden">Hero</h3>
+      <div class="absolute bottom-64 w-full mb-4">
+        <h4 class="text-4xl font-bold text-white ml-14 pt-44 absolute font-bold">Welcome to O-House!</h4>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="bg-slate-200 rounded-lg p-6 m-6">
+      <h3 class="text-3xl m-8 mb-12 font-light text-gray-600">Travel the World with Us!</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 m-8">
+        <p class="text-base text-gray-600">Welcome to O-House Travel Agency, your gateway to unforgettable journeys and once-in-a-lifetime experiences. Based in the heart of London, Ontario, we are dedicated to making your travel dreams a reality. Whether you seek the charm of European cities, the adventure of South American landscapes, or the tranquil beauty of Asian getaways, our expert team is here to craft personalized travel itineraries that cater to your every need. From meticulously planned vacations to spontaneous adventures, we invite you to embark on a global journey with us, where every trip is tailored to create lasting memories.</p>
+        <p class="text-base text-gray-600">We believe that travel should be an enriching and enjoyable experience. Our commitment is to provide exceptional service and valuable insights, ensuring that your journey is smooth, stress-free, and full of wonder. With our deep industry connections and insider knowledge, we promise to open doors to exclusive destinations and unique experiences that go beyond the ordinary. Join us as we explore the world together and turn your travel aspirations into reality.</p>
+      </div>
+      <h4 class="mt-12 cursor-pointer rounded-lg m-8 border-2 border-zinc-800 max-w-44 p-1 font-semibold text-center hover:bg-gray-800 hover:text-white hover:border-white shadow-md">Meet our Plans ></h4>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="p-6 m-6" id="gallery">
+      <h3 class="text-4xl m-8 mb-12 font-bold text-gray-600">Gallery of Trips</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 m-8">
+        <!-- Image 1-->
+        <div class="cursor-pointer hover:border-4 hover:border-gray-800 relative bg-gray-600 h-48 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('images/cdmx-1.jpg');">
+          <div class="absolute inset-0 flex items-end p-4">
+            <div class="bg-gray-800 p-2 rounded-lg">
+              <h4 class="text-white text-sm">Honolulu, Hawawii. 2024</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Image 2-->
+        <div class="cursor-pointer hover:border-4 hover:border-gray-800 relative bg-gray-600 h-48 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('images/cdmx-2.jpg');">
+          <div class="absolute inset-0 flex items-end p-4">
+            <div class="bg-gray-800 p-2 rounded-lg">
+              <h4 class="text-white text-sm">Florianópolis, Brazil. 2023</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Image 3-->
+        <div class="cursor-pointer hover:border-4 hover:border-gray-800 relative bg-gray-600 h-48 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('images/cdmx-3.jpg');">
+          <div class="absolute inset-0 flex items-end p-4">
+            <div class="bg-gray-800 p-2 rounded-lg">
+              <h4 class="text-white text-sm">Rio de Janeiro, Brazil. 2022</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Image 4-->
+        <div class="cursor-pointer hover:border-4 hover:border-gray-800 relative bg-gray-600 h-48 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('images/cdmx-4.jpg');">
+          <div class="absolute inset-0 flex items-end p-4">
+            <div class="bg-gray-800 p-2 rounded-lg">
+              <h4 class="text-white text-sm">Tokyo, Japan. 2020</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Image 5-->
+        <div class="cursor-pointer hover:border-4 hover:border-gray-800 relative bg-gray-600 h-48 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('images/cdmx-5.jpg');">
+          <div class="absolute inset-0 flex items-end p-4">
+            <div class="bg-gray-800 p-2 rounded-lg">
+              <h4 class="text-white text-sm">Lages, Brazil. 2019</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Image 6-->
+        <div class="cursor-pointer hover:border-4 hover:border-gray-800 relative bg-gray-600 h-48 rounded-lg overflow-hidden bg-cover bg-center" style="background-image: url('images/cdmx-6.jpg');">
+          <div class="absolute inset-0 flex items-end p-4">
+            <div class="bg-gray-800 p-2 rounded-lg">
+              <h4 class="text-white text-sm">London, United Kingdom. 2017</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-slate-200 rounded-lg p-6 m-6" id=about>
+      <h3 class="text-4xl m-8 mb-12 font-bold text-gray-600">About Our Agency</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 m-8">
+        <div class="relative bg-gray-600 shadow-md min-h-48 rounded-lg overflow-hidden bg-cover bg-top" style="background-image: url('images/cdmx-8.jpg');">
+        </div>
+        <p class="text-base text-gray-600">Our passionate team of travel experts brings years of industry experience and local expertise to every trip we plan. We pride ourselves on our personalized service, attention to detail, and unwavering dedication to customer satisfaction. Guided by our core values of integrity, innovation, and excellence, we strive to exceed expectations and create seamless travel experiences that reflect our clients' desires and dreams. Discover the world with confidence and ease, knowing that O-House is with you every step of the way. Guided by our core values of integrity, innovation, and excellence, we strive to exceed expectations and create seamless travel experiences that reflect our clients' desires and dreams. Our dedication to continuous learning and adapting to the ever-evolving travel landscape ensures that we offer the most up-to-date and relevant travel solutions. Discover the world with confidence and ease, knowing that O-House is with you every step of the way.</p>
+      </div>
+      <h4 class="mt-12 cursor-pointer rounded-lg m-8 border-2 border-zinc-800 max-w-44 p-1 font-semibold text-center hover:bg-gray-800 hover:text-white hover:border-white shadow-md">Talk to our Team ></h4>
+    </section>
+
+    <!-- Contact Form -->
+     <section class="p-6 m-6" id="contact">
+      <h3 class="hidden ">Contact Form</h3>
+      <div class="grid grid-cols-1 gap-6 m-8">
+        <h4 class="text-4xl font-bold text-gray-600">Contact Us!</h4>
+        <p class="text-gray-500">Fill in the form below with your information, a member of our team will get in touch soon!</p>
+      </div>
+
+      <form action="#" method="post" class="m-8">
+        <div class="mb-4">
+          <label for="name" class="block text-sm text-zinc-800 mb-1">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+        
+        <div class="mb-4">
+          <label for="phone" class="block text-sm text-zinc-800 mb-1">Phone</label>
+          <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+  
+        <div class="mb-4">
+          <label for="email" class="block text-sm text-zinc-800 mb-1">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+        </div>
+  
+        <div class="mb-4">
+          <button type="submit" class="w-full mt-6 cursor-pointer py-2 px-4 rounded-lg shadow-md border-2 border-zinc-800 max-w-44 p-1 font-semibold text-center hover:bg-gray-800 hover:text-white hover:border-white">Submit ></button>
+        </div>
+      </form>
+     </section>
+
+     <!-- Social Media -->
+     <section class="w-full bg-cover bg-center h-24 banner"  style="background-image: url('images/cdmx-9.jpg');">
+      <h3 class="hidden">Banner</h3>
+      <div class="flex justify-center pt-8">
+        <h4 class="text-white text-sm z-1">Visit our Social Media @ohousecanada</h4>
+      </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white min-h-64 p-16">
+      <h3 class="hidden">Footer</h3>
+      <div class="container mx-auto p-4 flex flex-col md:flex-row justify-between items-center gap-12">
+        <nav>
+          <h4 class="hidden">Footer Navigation</h4>
+          <ul class="flex space-x-4 justify-center md:justify-start">
+            <li><a href="#gallery" class="hover:text-blue-300"><h5>Gallery</h5></a></li>
+            <li><a href="#about" class="hover:text-blue-300"><h5>About</h5></a></li>
+            <li><a href="#contact" class="hover:text-blue-300"><h5>Contact</h5></a></li>
+          </ul>
+        </nav>
+        <div class="cursor-pointer text-l font-bold flex gap-3 items-center justify-center md:justify-start">
+          <h4 class="hidden">Logo</h4>
+          <img src="images/logo.svg" alt="Logo" class="w-8">
+          <h5 class="uppercase text-xl">O-House</h5>
+        </div>
+        <div class="text-center md:text-left mb-4 md:mb-0">
+          <h4 class="hidden">Copyright Information</h4>
+          <p class="mt-2">2024 &copy; O-House</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
